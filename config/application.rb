@@ -126,15 +126,15 @@ module Greenlight
     config.maintenance_mode = ENV["MAINTENANCE_MODE"] == "true"
 
     config.report_issue_url = ENV["REPORT_ISSUE_URL"]
-    config.help_url = ENV["HELP_URL"].presence || "https://docs.bigbluebutton.org/greenlight/gl-overview.html"
+    config.help_url = ENV["HELP_URL"].presence || "https://viqon.de/"
 
     # DEFAULTS
 
     # Default branding image if the user does not specify one
-    config.branding_image_default = "https://raw.githubusercontent.com/bigbluebutton/greenlight/master/app/assets/images/logo_with_text.png"
+    config.branding_image_default = "https://uploads-ssl.webflow.com/5eb7e73e620703d55d6e511c/5eb7f536ccd7e7aa4259430f_viqon-logo.svg"
 
     # Default primary color if the user does not specify one
-    config.primary_color_default = "#467fcf"
+    config.primary_color_default = "#2745f0"
 
     # Default primary color lighten if the user does not specify one
     config.primary_color_lighten_default = "#e8eff9"
