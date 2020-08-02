@@ -126,12 +126,12 @@ module Greenlight
     config.maintenance_mode = ENV["MAINTENANCE_MODE"] == "true"
 
     config.report_issue_url = ENV["REPORT_ISSUE_URL"]
-    config.help_url = ENV["HELP_URL"].presence || "https://viqon.de/"
+    config.help_url = ENV["HELP_URL"].presence || "https://roomz.video/"
 
     # DEFAULTS
 
     # Default branding image if the user does not specify one
-    config.branding_image_default = "https://uploads-ssl.webflow.com/5eb7e73e620703d55d6e511c/5eb7f536ccd7e7aa4259430f_viqon-logo.svg"
+    config.branding_image_default = "/b/custom_logo.svg"
 
     # Default primary color if the user does not specify one
     config.primary_color_default = "#2745f0"
@@ -140,7 +140,7 @@ module Greenlight
     config.primary_color_lighten_default = "#e8eff9"
 
     # Default primary color darken if the user does not specify one
-    config.primary_color_darken_default = "#316cbe"
+    config.primary_color_darken_default = "#02b3c7"
 
     # Default registration method if the user does not specify one
     config.registration_method_default = if ENV["DEFAULT_REGISTRATION"] == "invite"
